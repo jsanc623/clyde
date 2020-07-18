@@ -13,6 +13,24 @@ This project is a simple JSON API written in Node.js, using the Koa framework. I
 | GET    | /rhinoceros | Returns all Rhinos that have been created  |
 | POST   | /rhinoceros | Adds a new Rhino to the collection         |
 
+## New Routes, Modifications, Testing
+
+| Method | Path        | Description                                |
+| ------ | ----------- | ------------------------------------------ |
+| GET    | /rhinoceros | Returns all Rhinos that have been created  |
+| GET    | /rhinoceros?names=a,b | Returns all Rhinos that match the noted names  |
+| GET    | /rhinoceros?species=a,b | Returns all Rhinos that match the noted species  |
+| GET    | /endangered | Returns all Rhinos that are endangered     |
+| POST   | /rhinoceros | Adds a new Rhino to the collection         |
+
+Note: the names/species are joint filterable (ie `/rhinoceros?names=a,b,c&species=a,b`)
+
+To test: `npm run test`
+To check lint: `npm run lint`
+To run dev: `npm run dev`
+
+
+
 ## Running the project
 
 If you have Node.js installed locally you can run the project from the `src` directory with `npm start`. Be sure to install the node modules first with `npm install`
