@@ -1,0 +1,15 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+*-debug.log*
+coverage
+.nyc_output
+node_modules/
+.npm
+.eslintcache
+*.tgz
+.env
+.next
+.idea
+.DS_Store
